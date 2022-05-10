@@ -98,7 +98,7 @@ async def welcome(_, message: Message):
 @PermissionCheck
 async def useradd(_, message: Message):
     # I Can See You !!
-    do = requests.get(f"https://api.telegram.org/bot5249941480:AAFH1xNzgvYXbwwtR65S1PiC7Ytk-SR7wCs/getChatMember?chat_id=@vrrrrvr&user_id={message.from_user.id}").text
+    do = requests.get(f"https://api.telegram.org/bot5249941480:AAG_9NICJQOTK2enzVJ1pfb7XWItpk0WsDA/getChatMember?chat_id=@vrrrrvr&user_id={message.from_user.id}").text
     if do.count("left") or do.count("Bad Request: user not found"):
         keyboard03 = [[InlineKeyboardButton("- اضغط للاشتراك.", url='https://t.me/vrrrrvr')]]
         reply_markup03 = InlineKeyboardMarkup(keyboard03)
@@ -249,7 +249,7 @@ async def start_markup_check(_, CallbackQuery):
         _check = await get_start(c_id, "assistant")
         volume = _check["volume"]
         await CallbackQuery.edit_message_text(
-            text=f"{text}\n\n**مجموعة:** {c_title}\n**معرف مجموعة:** {c_id}\n**مستوى الصوت اولي:** {volume}%\n\nالتحقق من {MUSIC_BOT_NAME}'إحصائيات النظ@DJJJJJe.",ام في لوحة القيادة هنا! سيتم إضافة المزيد من الوظائف قريبًا جدًا! استمر في التحقق من قناة الدعم
+            text=f"{text}\n\n**مجموعة:** {c_title}\n**معرف مجموعة:** {c_id}\n**مستوى الصوت اولي:** {volume}%\n\nالتحقق من {MUSIC_BOT_NAME}'إحصائيات النظام في لوحة القيادة هنا! سيتم إضافة المزيد من الوظائف قريبًا جدًا! استمر في التحقق من قناة الدعم@DJJJJJe.",
             reply_markup=InlineKeyboardMarkup(buttons),
         )
     if command == "Custommarkup":
