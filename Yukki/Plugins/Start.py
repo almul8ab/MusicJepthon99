@@ -249,7 +249,7 @@ async def start_markup_check(_, CallbackQuery):
         _check = await get_start(c_id, "assistant")
         volume = _check["volume"]
         await CallbackQuery.edit_message_text(
-            text=f"{text}\n\n**مجموعة:** {c_title}\n**معرف مجموعة:** {c_id}\n**مستوى الصوت اولي:** {volume}%\n\nالتحقق من {MUSIC_BOT_NAME}'إحصائيات النظام في لوحة القيادة هنا! سيتم إضافة المزيد من الوظائف قريبًا جدًا! استمر في التحقق من قناة الدعم@DDDGD.",
+            text=f"{text}\n\n**مجموعة:** {c_title}\n**معرف مجموعة:** {c_id}\n**مستوى الصوت اولي:** {volume}%\n\nالتحقق من {MUSIC_BOT_NAME}'إحصائيات النظام في لوحة القيادة هنا! سيتم إضافة المزيد من الوظائف قريبًا جدًا! استمر في التحقق من قناة الدعم.",@DJJJJJe
             reply_markup=InlineKeyboardMarkup(buttons),
         )
     if command == "Custommarkup":
