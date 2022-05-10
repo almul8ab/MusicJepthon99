@@ -87,7 +87,7 @@ def AssistantAdd(mystic):
                     pass
                 except Exception as e:
                     await message.reply_text(
-                        f"__فشل انضمام المساعد  يرجى الاتصال بل دعم لحل المشكله  بوت الدعم : Tmxxbot_\n\n**او تابع شروحات البوت :@DDDGD**: "
+                        f"__فشل انضمام المساعد  يرجى الاتصال بل دعم لحل المشكله  بوت الدعم : @J45Bot_\n\n**او تابع شروحات البوت @DJJJJJe:**: "
                     )
                     return
             else:
@@ -107,7 +107,7 @@ def AssistantAdd(mystic):
                     pass
                 except Exception as e:
                     await message.reply_text(
-                        f"__فشل انضمام المساعد  يرجى الاتصال بل دعم لحل المشكله  بوت الدعم : Tmxxbot\n\n**او تابع شروحات البوت :@DDDGD**:"
+                        f"__فشل انضمام المساعد  يرجى الاتصال بل دعم لحل المشكله  بوت الدعم : @J45Bot\n\n**او تابع شروحات البوت :@DJJJJJe**:"
                     )
                     return
         return await mystic(_, message)
